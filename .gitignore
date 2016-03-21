@@ -11,6 +11,11 @@
 # Generated files
 bin/
 gen/
+out/
+
+# Gradle files
+.gradle/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -27,10 +32,8 @@ proguard/
 # Android Studio captures folder
 captures/
 
-#Gradle
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
+# Intellij
+*.iml
+
+# Keystore files
+*.jks
