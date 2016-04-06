@@ -3,5 +3,10 @@
     <string name="url_contatti">http://192.168.21.25:8080/rubrica-fe/rest/services/contatto</string>
     <string name="aggiungi_contatto">Aggiungi</string>
     <string name="cancella_contatto">Cancella Contatto</string>
+    <string name="inserisci_contatto">Inserisci Contatto</string>
     <string name="add_foto_contatto">Aggiungi Foto</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="telefono">Telefono</string>
+    <string name="email">Email</string>
 </resources>

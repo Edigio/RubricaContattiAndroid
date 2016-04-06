@@ -65,9 +65,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //inizia il download
-        task = new DownloadContattiTask();
-        task.execute(getString(R.string.url_contatti));
+        if (listaContatti!=null && listaContatti.size()>0) {
+            contattiAdapter = new ContattiAdapter(MainActivity.this, listaContatti);
+            lvContatti.setAdapter(contattiAdapter);
+        } else {
+            //inizia il download
+            task = new DownloadContattiTask();
+            task.execute(getString(R.string.url_contatti));
+        }
+
 
 
     }
@@ -86,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.add_new_contact:
                 //start dell'activity per aggiungere un contatto
+                Intent i = new Intent(MainActivity.this, AggiungiContattoActivity.class);
+                startActivity(i);
                 return true;
 
         }
@@ -179,24 +187,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-   /* private int requestPut(String urlString) throws IOException {
-        URL url = new URL(urlString);
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setReadTimeout(10000 *//* milliseconds *//*);
-        conn.setConnectTimeout(15000 *//* milliseconds *//*);
-        conn.setRequestMethod("PUT");
-        conn.setRequestProperty("Content-Type", "application/json");
-        conn.setDoInput(true);
-        conn.setDoOutput(true);
-        //passiamo il body
-        String str =  "{\"nome\":\"Luca\",\"cognome\":\"Verdi\",\"telefono\":\"366436\",\"email\":\"microssi@gmail.com\"}";
-        byte[] outputInBytes = str.getBytes("UTF-8");
-        OutputStream os = conn.getOutputStream();
-        os.write(outputInBytes);
-        os.close();
-        // Starts the query
-        conn.connect();
-        return conn.getResponseCode();
-    }*/
 
 }

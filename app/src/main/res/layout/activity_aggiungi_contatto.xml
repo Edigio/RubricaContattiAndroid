@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etNome"
+        android:textSize="@dimen/activity_dettaglio_size_testo"
+        android:hint="@string/nome"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/etCognome"
+        android:padding="@dimen/item_lv_contatti_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etCognome"
+        android:padding="@dimen/item_lv_contatti_padding"
+        android:textSize="@dimen/activity_dettaglio_size_testo"
+        android:hint="@string/cognome"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etTelefono"
+        android:padding="@dimen/item_lv_contatti_padding"
+        android:textSize="@dimen/activity_dettaglio_size_testo"
+        android:hint="@string/telefono"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:padding="@dimen/item_lv_contatti_padding"
+        android:textSize="@dimen/activity_dettaglio_size_testo"
+        android:hint="@string/email"
+        android:singleLine="true"
+        android:nextFocusForward="@+id/btnInserisci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnInserisci"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/inserisci_contatto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
