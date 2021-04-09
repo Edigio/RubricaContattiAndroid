@@ -16,7 +16,7 @@ import it.progettopa.rubricacontatti.model.ContattoVO;
  * Created on 14/03/16.
  */
 public class ContattiAdapter extends ArrayAdapter<ContattoVO> {
-
+// Classe adapter
 
     public ContattiAdapter(Context context, List<ContattoVO> objects) {
         super(context, 0, objects);

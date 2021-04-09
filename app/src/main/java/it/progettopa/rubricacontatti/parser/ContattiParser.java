@@ -21,6 +21,8 @@ public class ContattiParser {
     private final String TAG_TELEFONO = "telefono";
     private final String TAG_EMAIL = "email";
     private final String TAG_ID = "id";
+    private final String TAG_2 = "id";
+    private final String TAG_3 = "id";
 // Test fork
 
     public List<ContattoVO> getListaContatti(String result) {
