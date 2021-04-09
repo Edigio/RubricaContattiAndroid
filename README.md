@@ -1,0 +1,2 @@
+# RubricaContattiAndroid
+progetto di demo
